@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.sth0409.newlife.View.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scroll_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout_main">
+
+                <TextView
+                    android:id="@+id/TV_On_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:text="上滑动隐藏的部分"
+                    android:background="#6633ff"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/fragment_layout"
+                    android:layout_width="match_parent"
+                    android:background="#665aaa"
+                    android:layout_height="500dp">
+
+                </FrameLayout>
+
+                <TextView
+                    android:text="滑动后保留的部分"
+                    android:layout_width="match_parent"
+                    android:layout_height="800dp"
+                    android:id="@+id/TV_below_layout1"
+                    android:background="#a9663a"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#ff0000"
+                    android:gravity="center"
+                    android:text="停留的头部" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </com.example.sth0409.newlife.View.ObservableScrollView>
+</FrameLayout>
